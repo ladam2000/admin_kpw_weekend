@@ -17,6 +17,22 @@
             padding: 20px;
             border-radius: 10px;
         }
+        .gomb-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .gomb {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
     </style>
 </head>
 
@@ -33,12 +49,23 @@
         </form>
     </div>
 
-    <div id="tartalom" style="display: none;">
-        <iframe style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: none;"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsdLwFOE9nyXzrTl5ZoXOD08BqlPfpIVq4fUabT9Bj_sgDXl6Wk8m_ouECsNn3wQ/pubhtml?widget=true&amp;headers=false"></iframe>
+    <div id="clock"></div>
+    <script src="js/clock.js"></script>
+
+    
+
+    <div class="gomb-container">
+        <button class="gomb" onclick="megjelenitSzoveg(1)">Péntek</button>
+        <button class="gomb" onclick="megjelenitSzoveg(2)">Szombat</button>
+        <button class="gomb" onclick="megjelenitSzoveg(3)">Vasárnap</button>
     </div>
-    <script src="login.js"></script>
 
+    <div id="tartalom" style="display: none;">
+        <iframe style="width: 100%; height: 100%; position: absolute; left: 0; border: none; display: none;" id="tablazat"></iframe>
+        <iframe style="width: 100%; height: 100%; position: absolute; left: 0; border: none; display: none;" id="drive"></iframe>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/button.js"></script>
 </body>
-
 </html>
