@@ -1,4 +1,5 @@
 
+
 function ellenorizJelszo() {
     var jelszo = document.getElementById("jelszo").value;
 
