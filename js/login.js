@@ -4,7 +4,7 @@ function ellenorizJelszo() {
     var jelszo = document.getElementById("jelszo").value;
 
     // Ellenőrzés
-    if (jelszo === " ") { // Itt add meg a helyes jelszót
+    if (jelszo === "kpw.etkd") { // Itt add meg a helyes jelszót
         document.getElementById("bejelentkezes").style.display = "none";
         document.getElementById("tartalom").style.display = "block";
         return false; // Ne küldje el az űrlapot
