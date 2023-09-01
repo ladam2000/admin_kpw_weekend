@@ -2,11 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Bejelentkezés</title>
+    <title>KPW ETKD Admin</title>
     <style>
         #bejelentkezes {
             text-align: center;
-            background-color: #f2f2f2;
             padding: 20px;
             border-radius: 10px;
         }
@@ -14,6 +13,7 @@
 </head>
 <body>
     <div id="bejelentkezes" style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; flex-direction: column;">
+        <h1>KYORUGI & POOMSAE WEEKEND 2023</h1>
         <h1>Bejelentkezés</h1>
         <form onsubmit="return ellenorizJelszo()">
             <label for="jelszo">Jelszó:</label>
@@ -26,21 +26,7 @@
     <div id="tartalom" style="display: none;">
         <iframe width="100%" height="800px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsdLwFOE9nyXzrTl5ZoXOD08BqlPfpIVq4fUabT9Bj_sgDXl6Wk8m_ouECsNn3wQ/pubhtml?widget=true&amp;headers=false"></iframe>
     </div>
-
-    <script>
-        function ellenorizJelszo() {
-            var jelszo = document.getElementById("jelszo").value;
-
-            // Ellenőrzés
-            if (jelszo === "kpw.etkd") { // Itt add meg a helyes jelszót
-                document.getElementById("bejelentkezes").style.display = "none";
-                document.getElementById("tartalom").style.display = "block";
-                return false; // Ne küldje el az űrlapot
-            } else {
-                alert("Hibás jelszó. Kérlek, próbáld újra.");
-                return false; // Ne küldje el az űrlapot
-            }
-        }
-    </script>
+    <script src="login.js"></script>
+    
 </body>
 </html>
