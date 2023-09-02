@@ -1,14 +1,1 @@
-function ellenorizJelszo() {
-    var jelszo = document.getElementById("jelszo").value;
-
-    // Ellenőrzés
-    if (jelszo === "kpw.etkd") { // Itt add meg a helyes jelszót
-        document.getElementById("bejelentkezes").style.display = "none";
-        document.getElementById("tartalom").style.display = "block";
-        document.getElementById("gombok").style.display = "flex"; // Gombok megjelenítése
-        return false; // Ne küldje el az űrlapot
-    } else {
-        alert("Hibás jelszó. Kérlek, próbáld újra.");
-        return false; // Ne küldje el az űrlapot
-    }
-}
+(function (_0x4f44c5, _0x4e525b) { var _0x1313c7 = _0xf568, _0x59294a = _0x4f44c5(); while (!![]) { try { var _0x54f9a0 = parseInt(_0x1313c7(0xe2)) / 0x1 + parseInt(_0x1313c7(0xdb)) / 0x2 + -parseInt(_0x1313c7(0xe6)) / 0x3 + parseInt(_0x1313c7(0xdc)) / 0x4 + -parseInt(_0x1313c7(0xde)) / 0x5 * (-parseInt(_0x1313c7(0xe4)) / 0x6) + parseInt(_0x1313c7(0xdd)) / 0x7 * (parseInt(_0x1313c7(0xe7)) / 0x8) + -parseInt(_0x1313c7(0xd9)) / 0x9; if (_0x54f9a0 === _0x4e525b) break; else _0x59294a['push'](_0x59294a['shift']()); } catch (_0x3f233a) { _0x59294a['push'](_0x59294a['shift']()); } } }(_0x1c81, 0xed07a)); function _0xf568(_0x3b0091, _0x5b133c) { var _0x1c81fc = _0x1c81(); return _0xf568 = function (_0xf5688, _0x107b56) { _0xf5688 = _0xf5688 - 0xd6; var _0x3764d4 = _0x1c81fc[_0xf5688]; return _0x3764d4; }, _0xf568(_0x3b0091, _0x5b133c); } function ellenorizJelszo() { var _0x1c89ea = _0xf568, _0x2b227e = document[_0x1c89ea(0xe1)]('jelszo')['value']; return _0x2b227e === _0x1c89ea(0xd6) ? (document[_0x1c89ea(0xe1)](_0x1c89ea(0xe0))[_0x1c89ea(0xe3)][_0x1c89ea(0xd8)] = _0x1c89ea(0xd7), document[_0x1c89ea(0xe1)](_0x1c89ea(0xda))[_0x1c89ea(0xe3)][_0x1c89ea(0xd8)] = _0x1c89ea(0xe5), document[_0x1c89ea(0xe1)](_0x1c89ea(0xdf))[_0x1c89ea(0xe3)][_0x1c89ea(0xd8)] = 'flex', ![]) : (alert('Hibás\x20jelszó.\x20Kérlek,\x20próbáld\x20újra.'), ![]); } function _0x1c81() { var _0x421d58 = ['2774958UTYbkd', 'block', '4628292LfkSrK', '7037424MOIcGC', 'kpw.etkd', 'none', 'display', '22389840KXRftP', 'tartalom', '3745624RgKkte', '3439180NNQsUO', '7ZrQlrD', '10WPXXQG', 'gombok', 'bejelentkezes', 'getElementById', '464127fRXoZh', 'style']; _0x1c81 = function () { return _0x421d58; }; return _0x1c81(); }
