@@ -8,37 +8,15 @@
     <link rel="icon"
         href="https://res.cloudinary.com/weblapok/image/upload/v1682802793/Egyutt%20A%20Taekwondo%C3%A9rt/logo_dpc00b.ico"
         type="image/x-icon">
-    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     
 
 
     <title>KPW ETKD Admin</title>
 
-    <style>
-        #bejelentkezes {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .gomb-container {
-            display: none; /* Alapértelmezés szerint elrejtve */
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .gomb {
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        #tartalom {
-            display: none; /* Alapértelmezés szerint elrejtve */
-        }
-    </style>
+
+    
 </head>
 
 <body>
@@ -48,9 +26,9 @@
         <h1>Bejelentkezés</h1>
         <form onsubmit="return ellenorizJelszo()">
             <label for="jelszo">Jelszó:</label>
-            <input type="password" id="jelszo" name="jelszo" required><br><br>
+            <input type="password" id="jelszo" autocomplete="on" name="jelszo"  required><br><br>
 
-            <input type="submit" value="Belépés">
+            <input type="submit" class="gomb" value="Belépés">
         </form>
     </div>
 

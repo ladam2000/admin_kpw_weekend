@@ -1,0 +1,23 @@
+#bejelentkezes {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.gomb-container {
+    display: none; /* Alapértelmezés szerint elrejtve */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.gomb {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#tartalom {
+    display: none; /* Alapértelmezés szerint elrejtve */
+}
