@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileImage"
+        content="https://res.cloudinary.com/weblapok/image/upload/v1682802793/Egyutt%20A%20Taekwondo%C3%A9rt/logo_dpc00b.ico">
+    <meta charset="utf-8">
+    <link rel="icon"
+        href="https://res.cloudinary.com/weblapok/image/upload/v1682802793/Egyutt%20A%20Taekwondo%C3%A9rt/logo_dpc00b.ico"
+        type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>KPW ETKD Admin</title>
+
+
+
+</head>
+
+<body>
+    <div id="bejelentkezes"
+        style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; flex-direction: column;">
+        <h1>KYORUGI & POOMSAE WEEKEND 2023</h1>
+        <h1>Bejelentkezés</h1>
+        <form onsubmit="return ellenorizJelszo()">
+            <label for="jelszo">Jelszó:</label>
+            <input type="password" id="jelszo" autocomplete="on" name="jelszo" required><br><br>
+
+            <input type="submit" class="gomb" value="Belépés">
+        </form>
+    </div>
+
+    <div class="gomb-container" id="gombok">
+        <div id="clock"></div>
+
+        <script src="js/clock.js"></script>
+
+
+        <button class="gomb" onclick="megjelenitSzoveg(1)">Péntek</button>
+        <button class="gomb" onclick="megjelenitSzoveg(2)">Szombat</button>
+        <button class="gomb" onclick="megjelenitSzoveg(3)">Vasárnap</button>
+    </div>
+
+    <div id="tartalom">
+        <!-- Itt van a táblázat -->
+        <iframe style="width: 100%; height: 100%; position: absolute; left: 0; border: none; display: none;"
+            id="tablazat"></iframe>
+        <iframe style="width: 100%; height: 100%; position: absolute; left: 0; border: none; display: none;"
+            id="drive"></iframe>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/sc.js"></script>
+</body>
+
+</html>
